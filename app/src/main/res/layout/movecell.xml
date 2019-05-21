@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    custom:cardCornerRadius="8dp"
+
+    >
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+       >
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/item_image_img"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             android:scaleType="fitXY"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:adjustViewBounds="true"
+            android:src="@drawable/movepic"
+             android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+
+            android:contentDescription="Hold movie thumbnail"
+            android:layout_alignParentStart="true" /> <!-- on click, background effect -->
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/GridTextView"
+            android:maxLines="2"
+            android:minLines="1"
+            android:padding="10dp"
+            android:lines="1"
+            android:text="Title" />
+
+        <ProgressBar
+            android:id="@+id/progressBar2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/customprogressbar"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:layout_above="@+id/type" >
+
+            <TextView
+                android:id="@+id/rate"
+                style="@style/GridMicroDetailsTextView"
+                android:drawableLeft="@drawable/ic_thumb_up_white"
+
+                android:text="97%" />
+
+            <TextView
+                android:id="@+id/date"
+                style="@style/GridMicroDetailsTextView"
+                android:layout_alignParentRight="true"
+                android:text="19:17" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/type"
+            style="@style/GridDetailsTextView"
+            android:layout_alignBottom="@id/item_image_img"
+            android:layout_marginBottom="2dp"
+             android:foreground="?android:attr/selectableItemBackground"
+            android:padding="10dp"
+            android:text="Channel" /> <!-- on click, background effect -->
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/cell_bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:layout_marginTop="-10dp"
+        android:background="@color/video_cell_background">
+
+        <TextView
+            android:id="@+id/description"
+            style="@style/GridDetailsTextView"
+            android:layout_width="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:text="199 Views" />
+
+    </RelativeLayout>
+
+</LinearLayout>
+</androidx.cardview.widget.CardView>

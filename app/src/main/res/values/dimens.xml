@@ -1,0 +1,43 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">16dp</dimen>
+    <dimen name="nav_header_height">160dp</dimen>
+
+    <!-- General -->
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="spacing_small">4dp</dimen>
+    <dimen name="spacing_medium">8dp</dimen>
+
+    <!-- Movies Grid -->
+    <integer name="movies_columns">2</integer>
+    <dimen name="movie_item_offset">4dp</dimen>
+
+    <!-- Movie Detail -->
+    <!-- Movie Detail -->
+    <dimen name="app_bar_height">180dp</dimen>
+     <dimen name="movie_detail_content_margin_left_right">0dp</dimen>
+    <dimen name="movie_detail_cards_margin_left_right">0dp</dimen>
+    <integer name="movie_detail_content_elevation_in_dp">6</integer>
+    <integer name="movie_detail_fab_elevation_in_dp">10</integer>
+    <dimen name="movie_detail_content_overlay">0dp</dimen>
+
+
+
+    <dimen name="card_margin">5dp</dimen>
+    <dimen name="card_elevation">3dp</dimen>
+    <dimen name="card_album_radius">0dp</dimen>
+    <dimen name="movie_thumb_height">240dp</dimen>
+    <dimen name="card_content_padding">10dp</dimen>
+    <dimen name="movie_title_size">15dp</dimen>
+    <dimen name="movie_content_size">12dp</dimen>
+    <dimen name="detail_backdrop_height">250dp</dimen>
+    <dimen name="detail_movie_title">22dp</dimen>
+    <dimen name="overview_text_size">13dp</dimen>
+    <dimen name="cast_width">120dp</dimen>
+    <dimen name="cast_heigh">150dp</dimen>
+    <dimen name="no_result_text_size">20dp</dimen>
+
+
+</resources>

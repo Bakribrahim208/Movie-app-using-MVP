@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/cast_width"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:background="@color/video_cell_text_details"
+    android:orientation="vertical"
+    android:elevation="5dp">
+          <RelativeLayout
+        android:id="@+id/rl_movie_thumb"
+        android:layout_width="@dimen/cast_width"
+        android:layout_height="@dimen/cast_heigh"
+        android:elevation="10dp"
+        >
+
+
+        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/iv_profile_pic"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+              android:src="@drawable/movepic"
+            app:civ_border_color="#FFFDFD"
+            app:civ_border_width="2dp"
+            android:paddingRight="16dp"
+            android:paddingLeft="8dp"
+
+            />
+        <ProgressBar
+            android:id="@+id/pb_load_profile"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_centerInParent="true"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/tv_character"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="bakr"
+        android:textColor="@color/colorPrimaryDark"
+        android:paddingTop="@dimen/card_content_padding"
+        android:textSize="@dimen/overview_text_size"
+        android:typeface="sans" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="bakr"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/overview_text_size"
+        android:typeface="sans" />
+</LinearLayout>
+
+
+
