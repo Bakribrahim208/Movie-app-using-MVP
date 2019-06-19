@@ -2,11 +2,13 @@
 <resources>
 
 
-    <color name="colorPrimary">#263238</color>
-    <color name="colorPrimaryDark">#21272B</color>
-    <color name="colorAccent">#26A69A</color>
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimaryDark">#ababab</color>
+    <color name="colorAccent">#2798FF</color>
 
+    <color name="text_default">#000000</color>
 
+    <color name="rippleColor">#c32798ff</color>
     <color name="text_black_color">#381423</color>
 
     <!--
@@ -67,4 +69,15 @@
     <color name="color_24">#9E9E9E</color>
     <color name="color_25">#607D8B</color>
     <color name="color_26">#000000</color>
+
+
+
+
+
+
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorNoInternetGradStart">#A53E3E</color>
+    <color name="colorNoInternetGradCenter">#7C3033</color>
+    <color name="colorNoInternetGradEnd">#5E2436</color>
+
 </resources>

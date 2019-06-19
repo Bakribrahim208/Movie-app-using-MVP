@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">MoveApp</string>
+    <string name="app_name">Movavi</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
@@ -18,7 +18,6 @@
 		your device.</string>
 
 
-
     <!--
         Holds different videos categories.
 
@@ -35,6 +34,7 @@
     <string name="popular">popular</string>
     <string name="upcoming">upcoming</string>
     <string name="nowplaying">Now Playing</string>
+    <string name="Favourite">Favourite</string>
 
 
     <string name="Overview">Overview</string>
@@ -43,4 +43,10 @@
     <string name="Reviews">Reviews</string>
     <string name="Videos">Videos</string>
     <string name="Cast">Cast</string>
+
+
+    <string name="genre">
+   <![CDATA[{"genres":[{"id":28,"name":"Action"},{"id":12,"name":"Adventure"},{"id":16,"name":"Animation"},{"id":35,"name":"Comedy"},{"id":80,"name":"Crime"},{"id":99,"name":"Documentary"},{"id":18,"name":"Drama"},{"id":10751,"name":"Family"},{"id":14,"name":"Fantasy"},{"id":36,"name":"History"},{"id":27,"name":"Horror"},{"id":10402,"name":"Music"},{"id":9648,"name":"Mystery"},{"id":10749,"name":"Romance"},{"id":878,"name":"Science Fiction"},{"id":10770,"name":"TV Movie"},{"id":53,"name":"Thriller"},{"id":10752,"name":"War"},{"id":37,"name":"Western"}]}]]>
+
+    </string>
 </resources>

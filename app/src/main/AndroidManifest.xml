@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="bakribrahim.com.moveappdemo">
 
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
@@ -13,15 +14,22 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:replace="android:allowBackup,icon,theme,label">
-        <activity android:name=".MovieDetails.DetailsActivity" android:parentActivityName=".MovieList.MainActivity"
-            android:theme="@style/AppTheme.NoActionBar" ></activity>
-        <activity android:name=".MovieList.MainActivity"
-            android:launchMode="singleTop">
+        <activity android:name=".splashScreen"
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".MovieDetails.UI.DetailsActivity"
+            android:parentActivityName=".MovieList.UI.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".MovieList.UI.MainActivity"
+            android:launchMode="singleTop">
+
         </activity>
     </application>
 

@@ -3,6 +3,14 @@
     <!-- Base application theme. -->
 
 
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="actionBarPopupTheme">@style/ThemeOverlay.AppCompat</item>
+    </style>
+
     <style name="AppTheme.NoActionBar">
          <item name="windowNoTitle">true</item>
 
@@ -12,13 +20,22 @@
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
     <!-- SkyTube theme -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
+    <style name="FullScreenDialogStyle" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowNoTitle">true</item>
 
-        <item name="actionBarPopupTheme">@style/ThemeOverlay.AppCompat</item>
+        <!-- Set this to true if you want Full Screen without status bar -->
+        <item name="android:windowFullscreen">false</item>
+
+        <item name="android:windowIsFloating">false</item>
+
+        <!-- This is important! Don't forget to set window background -->
+
+        <!-- Additionally if you want animations when dialog opening -->
+        <item name="android:windowEnterAnimation">@anim/slide_up</item>
+        <item name="android:windowExitAnimation">@anim/slide_down</item>
     </style>
+
+
 
 
     <!-- *************************************************************************************** -->
@@ -32,6 +49,13 @@
     </style>
 
 
+
+    <style name="roundedButton" parent="@style/Widget.AppCompat.Button.Colored">
+        <item name="android:background">@drawable/bg_button</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:textSize">12sp</item>
+    </style>
     <!-- *************************************************************************************** -->
     <!--
         Video Grid

@@ -1,110 +1,103 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<androidx.cardview.widget.CardView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="8dp"
     custom:cardCornerRadius="8dp"
-
     >
 
 
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:custom="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
        >
-
-    <RelativeLayout
-        android:orientation="vertical"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <ImageView
+            <ImageView
             android:id="@+id/item_image_img"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
              android:scaleType="fitXY"
             android:background="?attr/selectableItemBackgroundBorderless"
             android:adjustViewBounds="true"
             android:src="@drawable/movepic"
-             android:layout_alignParentTop="true"
-            android:layout_alignParentLeft="true"
+             android:contentDescription="Hold movie thumbnail"
+              /> <!-- on click, background effect -->
 
-            android:contentDescription="Hold movie thumbnail"
-            android:layout_alignParentStart="true" /> <!-- on click, background effect -->
-
-        <TextView
-            android:id="@+id/title"
-            style="@style/GridTextView"
-            android:maxLines="2"
-            android:minLines="1"
-            android:padding="10dp"
-            android:lines="1"
-            android:text="Title" />
 
         <ProgressBar
             android:id="@+id/progressBar2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
+            android:layout_gravity="center"
             android:background="@drawable/customprogressbar"/>
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="8dp"
-            android:layout_above="@+id/type" >
-
-            <TextView
-                android:id="@+id/rate"
-                style="@style/GridMicroDetailsTextView"
-                android:drawableLeft="@drawable/ic_thumb_up_white"
-
-                android:text="97%" />
-
-            <TextView
-                android:id="@+id/date"
-                style="@style/GridMicroDetailsTextView"
-                android:layout_alignParentRight="true"
-                android:text="19:17" />
-        </RelativeLayout>
-
-        <TextView
-            android:id="@+id/type"
-            style="@style/GridDetailsTextView"
-            android:layout_alignBottom="@id/item_image_img"
-            android:layout_marginBottom="2dp"
-             android:foreground="?android:attr/selectableItemBackground"
-            android:padding="10dp"
-            android:text="Channel" /> <!-- on click, background effect -->
-    </RelativeLayout>
-
-
-    <RelativeLayout
-        android:id="@+id/cell_bottom_layout"
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animation_view"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingLeft="10dp"
-        android:paddingRight="10dp"
-        android:paddingBottom="10dp"
-        android:layout_marginTop="-10dp"
-        android:background="@color/video_cell_background">
+        android:layout_height="200dp"
+        app:lottie_rawRes="@raw/placeholder"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        />
 
-        <TextView
-            android:id="@+id/description"
-            style="@style/GridDetailsTextView"
-            android:layout_width="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:text="199 Views" />
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+          android:layout_gravity="bottom"
+          android:background="#80CCCACA"
+          android:id="@+id/Linearlayout"
+          >
+          <TextView
+              android:id="@+id/title"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+               android:maxLines="2"
+              android:minLines="1"
+              android:padding="10dp"
+              android:lines="1"
+              android:textSize="18dp"
+              android:textColor="@color/colorPrimary"
+              android:text="Title"
+              />
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal">
+              <TextView
+                  android:id="@+id/date"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                   android:layout_alignParentRight="true"
+                  android:text="19:17"
+                  android:layout_gravity="left"
+                  android:layout_weight="1"
+                  android:textColor="@color/colorPrimary"
+                  android:layout_marginLeft="8dp"
+                   />
+              <TextView
+                  android:id="@+id/rate"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:drawableLeft="@drawable/ic_star_black_24dp"                  android:text="97%"
+                  android:layout_gravity="right"
+                  android:textColor="@color/colorPrimary"
+                  android:layout_marginRight="8dp"
 
-    </RelativeLayout>
+                  />
+          </LinearLayout>
 
-</LinearLayout>
+      </LinearLayout>
+
+
+
+
+</FrameLayout>
 </androidx.cardview.widget.CardView>

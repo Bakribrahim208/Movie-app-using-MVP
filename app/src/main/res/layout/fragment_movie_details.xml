@@ -27,20 +27,20 @@
                 android:layout_height="wrap_content"
                 android:adjustViewBounds="true"
                 android:contentDescription="content_description_movie_poster"
-                tools:src="@mipmap/ic_launcher"/>
+                tools:src="@mipmap/ic_launcher"
+                android:padding="8dp"/>
 
             <TextView
                 android:id="@+id/text_movie_original_title"
                 style="@android:style/TextAppearance.Large"
-                android:layout_width="fill_parent"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignTop="@+id/image_movie_detail_poster"
                 android:layout_toEndOf="@+id/image_movie_detail_poster"
                 android:layout_toRightOf="@+id/image_movie_detail_poster"
                 android:ellipsize="end"
-                android:lines="2"
-                android:fontFamily="sans-serif-condensed"
-                android:maxLines="3"
+                 android:fontFamily="sans-serif-condensed"
+                android:maxLines="2"
                 android:paddingEnd="8dp"
                 android:paddingLeft="8dp"
                 android:paddingRight="8dp"
@@ -50,29 +50,24 @@
 
             <TextView
                 android:id="@+id/text_movie_user_rating"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/text_movie_original_title"
-                android:layout_centerVertical="true"
-                android:layout_margin="@dimen/spacing_medium"
-                android:layout_marginStart="@dimen/spacing_medium"
-                android:layout_marginLeft="@dimen/spacing_medium"
-                android:layout_marginTop="-21dp"
-                android:layout_marginBottom="@dimen/spacing_medium"
-                android:layout_toEndOf="@+id/image_movie_detail_poster"
+                  android:layout_toEndOf="@+id/image_movie_detail_poster"
                 android:layout_toRightOf="@+id/image_movie_detail_poster"
                 android:fontFamily="sans-serif-light"
-                android:gravity="center"
+                android:gravity="left"
                 android:textSize="42sp"
-                tools:text="10.0" />
+                tools:text="10.0"
+
+                />
 
             <TextView
                 android:id="@+id/text_movie_release_date"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignBottom="@id/image_movie_detail_poster"
-                android:layout_marginBottom="@dimen/spacing_medium"
-                android:layout_toEndOf="@+id/image_movie_detail_poster"
+                 android:layout_toEndOf="@+id/image_movie_detail_poster"
                 android:layout_toRightOf="@+id/image_movie_detail_poster"
                 android:paddingEnd="8dp"
                 android:paddingLeft="8dp"

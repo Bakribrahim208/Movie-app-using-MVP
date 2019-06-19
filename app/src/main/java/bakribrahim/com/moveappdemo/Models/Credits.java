@@ -1,15 +1,10 @@
 package bakribrahim.com.moveappdemo.Models;
 
-/**
- * @file Credits.java
- * @brief This is a pojo class, which will hold list of casts
- * @author Shrikant
- * @date 16/04/2018
- */
-
 import com.google.gson.annotations.SerializedName;
 
 import java.util.List;
+
+import bakribrahim.com.moveappdemo.Models.Cast.Cast;
 
 public class Credits {
 
